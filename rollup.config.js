@@ -10,9 +10,7 @@ export default [
       },
     ],
     plugins: [
-      ts({
-        tsconfig: './tsconfig.json',
-      }),
+      ts(),
     ],
   },
 ];
