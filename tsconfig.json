@@ -1,11 +1,14 @@
 {
   "compilerOptions": {
-    "lib": ["es2022"],
+    "lib": ["es2022", "DOM"],
     "target": "es2022",
     "declaration": true,
+    "declarationDir": "./dist/esm",
 
-    "module": "NodeNext",
-    // "moduleResolution": "NodeNext",
+    "module": "esnext",
+    "moduleResolution": "bundler",
+
+    "jsx": "react-jsx",
 
     "paths": {
       "@": ["src"],
