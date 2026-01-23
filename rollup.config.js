@@ -12,5 +12,9 @@ export default [
     plugins: [
       ts(),
     ],
+    external: [
+      'react',
+      'react/jsx-runtime',
+    ],
   },
 ];
