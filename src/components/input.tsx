@@ -72,3 +72,24 @@ export const CheckboxInput: FC<ExtendBuiltin<'input', {
     {...rest}
   />
 };
+
+export const Textarea: FC<ExtendBuiltin<'textarea', {
+  value: string,
+  onChange?: (value: string) => void,
+}>> = ({
+  value,
+  onChange,
+  ...rest
+}) => {
+  const onChangeCallback = useWrappedHandler<ChangeEvent<HTMLTextAreaElement>, string>(
+    onChange,
+    event => event.currentTarget.value,
+    [onChange],
+  );
+
+  return <textarea
+    value={value}
+    onChange={onChangeCallback}
+    {...rest}
+  />
+};
