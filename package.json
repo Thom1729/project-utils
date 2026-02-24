@@ -1,6 +1,6 @@
 {
   "name": "@thom1729/react-utils",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "",
   "type": "module",
   "main": "dist/esm/index.js",
